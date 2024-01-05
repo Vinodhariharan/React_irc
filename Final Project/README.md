@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Installing and running the json server !SHOULD BE DONE BEFORE RUNNING THE APP!
+## Installing and running the json server **!SHOULD BE DONE BEFORE RUNNING THE APP!**
 
 In the project directory, you can run: 
 
