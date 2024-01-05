@@ -21,6 +21,7 @@ import { MyContextProvider } from './component/Datas/DataContext.jsx';
 import Checkout from './component/Checkout/checkout.jsx';
 import PaymentPage from './component/Checkout/PlaceOrder.jsx'; // Import the PaymentPage component
 import SideMenu from './component/Home/SideMenu.jsx';
+import { AuthProvider } from './component/AllComp/AuthContext.js';
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -29,15 +30,17 @@ const App = () => {
   return (
     <CartProvider>
       <MyContextProvider>
-        <Router>
-          <AppContent isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
-        </Router>
+        <AuthProvider>
+          <Router>
+            <AppContent/>
+          </Router>
+        </AuthProvider>
       </MyContextProvider>
     </CartProvider>
   );
 };
 
-const AppContent = ({ isLoggedIn, setLoggedIn }) => {
+const AppContent = () => {
   const location = useLocation();
 
   // Check if the current route is Login or Register
@@ -51,7 +54,7 @@ const AppContent = ({ isLoggedIn, setLoggedIn }) => {
 
   return (
     <div>
-      {!isAuthPage && <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />}
+      {!isAuthPage && <Navbar/>}
       {!isAuthPage && <ProductCategories />}
       {/* {!isAuthPage && <SideMenu />} */}
       <Container sx={{ marginTop: 2, minHeight: '100vh' }}>
@@ -61,7 +64,7 @@ const AppContent = ({ isLoggedIn, setLoggedIn }) => {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/login" render={(props) => <Login {...props} setLoggedIn={setLoggedIn} />} />
+          <Route path="/login" render={(props) => <Login/>} />
           <Route path='/register' component={Register} />
           <Route path='/productList/:slug' component={ProductListPass} />
           <Route path='/productList/' component={ProductListPass} />
@@ -72,7 +75,7 @@ const AppContent = ({ isLoggedIn, setLoggedIn }) => {
           <Route path="/terms" component={TermsAndConditions} />
           <Route path="/faq" component={FAQSection} />
           <Route path="/privacy" component={PrivacyPolicy} />
-          
+
           <Route path="/contact" component={ContactInformation} />
         </Switch>
 

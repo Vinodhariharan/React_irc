@@ -5,7 +5,7 @@ import { DataContext } from "../Datas/DataContext.jsx";
 
 function getProductById(productSlug,data) {
   
-  const allTypes = ['containers', 'flowers', 'tools', 'fertilizers', 'shrubs', 'trendingPlants','trees']
+  const allTypes = ['containers', 'flowers', 'tools', 'fertilizers', 'shrubs', 'trendingPlants','trees','indoorPlants']
   var pro;    
   for (let index = 0; index < allTypes.length; index++) {
     const element = allTypes[index];

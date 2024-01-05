@@ -3,10 +3,10 @@
     {
       "firstName": "Vinodhariharan",
       "lastName": "Ravi",
-      "email": "vinodhari.ravi@outlook.com",
+      "email": "abc@gmail.com",
       "password": "1",
       "confirmPassword": "1",
-      "id": 6
+      "id": 1
     },
     {
       "firstName": "Vinod",
@@ -14,15 +14,167 @@
       "email": "asdasd@sdfsdf.cms",
       "password": "2",
       "confirmPassword": "2",
-      "id": 7
+      "id": 2
     },
     {
-      "firstName": "sdfsdfsdfsdfsdf",
-      "lastName": "Ravi",
-      "email": "asdasdasdasd@dfs.csfd",
-      "password": "3",
-      "confirmPassword": "3",
-      "id": 8
+      "firstName": "Vignesh",
+      "lastName": "Kumar",
+      "email": "ahf@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 3
+    }
+  ],
+  "indoorPlants": [
+    {
+      "id": 1,
+      "imageSrc": "/assets/images/indoorPlants/plant1.jpg",
+      "title": "Peace Lily",
+      "price": 19.99,
+      "description": "Graceful, easy-to-care-for houseplant with glossy, dark green leaves and white blooms.",
+      "link": "peace-lily",
+      "type": "Foliage Plant",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 2,
+      "imageSrc": "/assets/images/indoorPlants/plant2.jpg",
+      "title": "Snake Plant",
+      "price": 14.99,
+      "description": "Hardy and low-maintenance plant with upright, sword-like leaves.",
+      "link": "snake-plant",
+      "type": "Succulent",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 3,
+      "imageSrc": "/assets/images/indoorPlants/plant3.jpg",
+      "title": "Fiddle Leaf Fig",
+      "price": 29.99,
+      "description": "Trendy indoor tree with large, fiddle-shaped leaves.",
+      "link": "fiddle-leaf-fig",
+      "type": "Tree",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 4,
+      "imageSrc": "/assets/images/indoorPlants/plant4.jpg",
+      "title": "Spider Plant",
+      "price": 12.99,
+      "description": "Air-purifying plant with arching leaves, producing spider-like offshoots.",
+      "link": "spider-plant",
+      "type": "Foliage Plant",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 5,
+      "imageSrc": "/assets/images/indoorPlants/plant5.jpg",
+      "title": "ZZ Plant",
+      "price": 24.99,
+      "description": "Drought-tolerant plant with shiny, dark green leaves.",
+      "link": "zz-plant",
+      "type": "Succulent",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 6,
+      "imageSrc": "/assets/images/indoorPlants/plant6.jpg",
+      "title": "Monstera Deliciosa",
+      "price": 34.99,
+      "description": "Popular plant with split leaves, known for its unique and stylish appearance.",
+      "link": "monstera-deliciosa",
+      "type": "Foliage Plant",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 7,
+      "imageSrc": "/assets/images/indoorPlants/plant7.jpg",
+      "title": "Pothos",
+      "price": 16.99,
+      "description": "Versatile and easy-to-grow trailing plant with heart-shaped leaves.",
+      "link": "pothos",
+      "type": "Trailing Plant",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 8,
+      "imageSrc": "/assets/images/indoorPlants/plant8.jpg",
+      "title": "Aloe Vera",
+      "price": 18.99,
+      "description": "Succulent plant with fleshy leaves, known for its soothing gel.",
+      "link": "aloe-vera",
+      "type": "Succulent",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 9,
+      "imageSrc": "/assets/images/indoorPlants/plant9.jpg",
+      "title": "Rubber Plant",
+      "price": 22.99,
+      "description": "Classic houseplant with broad, dark green leaves.",
+      "link": "rubber-plant",
+      "type": "Foliage Plant",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 10,
+      "imageSrc": "/assets/images/indoorPlants/plant10.jpg",
+      "title": "Bird of Paradise",
+      "price": 39.99,
+      "description": "Large and striking plant with banana-like leaves.",
+      "link": "bird-of-paradise",
+      "type": "Tree",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 11,
+      "imageSrc": "/assets/images/indoorPlants/plant11.jpg",
+      "title": "Jade Plant",
+      "price": 15.99,
+      "description": "Succulent plant with thick, oval-shaped leaves.",
+      "link": "jade-plant",
+      "type": "Succulent",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 12,
+      "imageSrc": "/assets/images/indoorPlants/plant12.jpg",
+      "title": "Fern",
+      "price": 17.99,
+      "description": "Lush and feathery plant, perfect for adding greenery to indoor spaces.",
+      "link": "fern",
+      "type": "Foliage Plant",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 13,
+      "imageSrc": "/assets/images/indoorPlants/plant13.jpg",
+      "title": "Parlor Palm",
+      "price": 20.99,
+      "description": "Compact and elegant palm plant, well-suited for indoor environments.",
+      "link": "parlor-palm",
+      "type": "Palm",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 14,
+      "imageSrc": "/assets/images/indoorPlants/plant14.jpg",
+      "title": "Fittonia",
+      "price": 13.99,
+      "description": "Colorful and low-maintenance plant with intricate leaf patterns.",
+      "link": "fittonia",
+      "type": "Foliage Plant",
+      "category": "indoorPlants"
+    },
+    {
+      "id": 15,
+      "imageSrc": "/assets/images/indoorPlants/plant15.jpg",
+      "title": "Dumb Cane",
+      "price": 18.99,
+      "description": "Attractive plant with variegated leaves, suitable for indoor spaces.",
+      "link": "dumb-cane",
+      "type": "Foliage Plant",
+      "category": "indoorPlants"
     }
   ],
   "containers": [
@@ -1179,7 +1331,5 @@
       "category": "trees"
     }
   ],
-  "cartItems":[
-
-  ]
+  "cartItems": []
 }

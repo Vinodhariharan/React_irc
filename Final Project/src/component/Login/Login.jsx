@@ -5,8 +5,11 @@ import pic from '../../assets/images/gardeningpic1.gif';
 import { Link, useHistory } from 'react-router-dom';
 import Input from '@mui/joy/Input';
 import axios from 'axios';
+import { useAuth } from '../AllComp/AuthContext';
 
-function Login({ setLoggedIn }) {
+function Login() {
+  const { setLoggedIn, setUsername } = useAuth(); // Use the useAuth hook
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -21,6 +24,8 @@ function Login({ setLoggedIn }) {
     axios.get(apiUrl, { params: { email, password } })
       .then(response => {
         if (response.data.length > 0) {
+          console.log(response.data[0].firstName)
+          setUsername(response.data[0].firstName);
           // User exists, set login state to true and redirect to the home page
           setLoggedIn(true);
           history.push('/');

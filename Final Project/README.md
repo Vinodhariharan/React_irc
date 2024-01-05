@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installing and running the json server !SHOULD BE DONE BEFORE RUNNING THE APP!
+
+In the project directory, you can run: 
+
+### `npm install json-server`
+
+Then run the code in the terminal to start the server
+
+### `json-server --watch dataset.json --port 8000`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -14,10 +24,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+<!-- ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information. -->
 
 ### `npm run build`
 
