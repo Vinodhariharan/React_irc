@@ -22,6 +22,7 @@ import Checkout from './component/Checkout/checkout.jsx';
 import PaymentPage from './component/Checkout/PlaceOrder.jsx'; // Import the PaymentPage component
 import SideMenu from './component/Home/SideMenu.jsx';
 import { AuthProvider } from './component/AllComp/AuthContext.js';
+import ErrorBoundary from './component/AllComp/ErrorBoundary.jsx';
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -43,13 +44,11 @@ const App = () => {
 const AppContent = () => {
   const location = useLocation();
 
-  // Check if the current route is Login or Register
   const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
   const isAuthHome = location.pathname === '/';
 
   useEffect(() => {
-    // Directly set background color on the body element
-    document.body.style.backgroundColor = isAuthPage ? '#0A4938' : '#fff'; // Adjust default color if needed
+    document.body.style.backgroundColor = isAuthPage ? '#0A4938' : '#fff'; 
   }, [isAuthPage]);
 
   return (
@@ -59,8 +58,7 @@ const AppContent = () => {
       {/* {!isAuthPage && <SideMenu />} */}
       <Container sx={{ marginTop: 2, minHeight: '100vh' }}>
         {isAuthHome && <ImageSlider images={images} />}
-
-
+        {/* <ErrorBoundary> */}
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
@@ -70,15 +68,13 @@ const AppContent = () => {
           <Route path='/productList/' component={ProductListPass} />
           <Route path="/products/:slug" component={ProductDetails} />
           <Route path="/checkout" component={Checkout} />
-          <Route path="/placeorder" component={PaymentPage} /> {/* Route to the PaymentPage component */}
-
+          <Route path="/placeorder" component={PaymentPage} /> 
           <Route path="/terms" component={TermsAndConditions} />
           <Route path="/faq" component={FAQSection} />
           <Route path="/privacy" component={PrivacyPolicy} />
-
           <Route path="/contact" component={ContactInformation} />
         </Switch>
-
+        {/* </ErrorBoundary> */}
       </Container>
       {!isAuthPage && <Footer />}
     </div>
