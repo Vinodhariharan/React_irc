@@ -58,7 +58,7 @@ const AppContent = () => {
       {/* {!isAuthPage && <SideMenu />} */}
       <Container sx={{ marginTop: 2, minHeight: '100vh' }}>
         {isAuthHome && <ImageSlider images={images} />}
-        {/* <ErrorBoundary> */}
+        <ErrorBoundary>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
@@ -74,7 +74,7 @@ const AppContent = () => {
           <Route path="/privacy" component={PrivacyPolicy} />
           <Route path="/contact" component={ContactInformation} />
         </Switch>
-        {/* </ErrorBoundary> */}
+        </ErrorBoundary>
       </Container>
       {!isAuthPage && <Footer />}
     </div>
